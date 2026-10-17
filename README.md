@@ -5,7 +5,7 @@
 *Chiara Frascaria · Sapienza University of Rome · Computer Vision 2025–2026*
 
 ---
-
+![3D mesh reconstruction toolkit with KeyNetAffNet-HardNet and pycolmap](cover.png)
 ## Overview
 
 This toolkit is a photogrammetry pipeline: it takes a folder of photos of an object or scene, and it produces:
@@ -42,6 +42,13 @@ The feature matching stage follows the main recommendations of the **IMC 2024 si
 python main.py --image_dir /path/to/images --output_dir ./output
 ```
 
+**Ceramic hen:** input photos (left) and the dense reconstruction (right)
+
+![Ceramic hen: input photos and dense reconstruction](result_hen.png)
+
+**Outdoor scenes:** tree-trunk sculpture (top) and sandstone wall fountain (bottom)
+
+![Tree-trunk sculpture and wall fountain: input photos and dense reconstructions](result_outdoor.png)
 ## Acknowledgements
 
 - `reconstruction/database.py` is adapted from COLMAP's scripts (© ETH Zurich and UNC Chapel Hill, BSD license).
