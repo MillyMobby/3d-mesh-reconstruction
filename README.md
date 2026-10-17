@@ -15,7 +15,7 @@ This toolkit is a photogrammetry pipeline: it takes a folder of photos of an obj
 - a dense, coloured point cloud
 - a surface mesh (Poisson reconstruction)
 
-The feature matching stage follows the main recommendations of the **IMC 2024 silver medal solution** (Wang, 2024). That paper benchmarks a set of state-of-the-art matchers. This project takes its suggested combination, **KeyNetAffNet-HardNet + AdaLAM**, and extends it into a full **SfM + dense MVS** reconstruction pipeline built on [pycolmap](https://github.com/colmap/pycolmap).
+The feature matching stage follows the main recommendations of the **IMC 2024 silver medal solution** (Wang, 2024). That paper benchmarks a set of state-of-the-art matchers. This project takes its suggested combination, **KeyNetAffNet-HardNet + AdaLAM**, and extends it into a full **SfM + dense MVS** reconstruction pipeline built on pycolmap.
 
 ## Pipeline
 
@@ -31,8 +31,8 @@ The feature matching stage follows the main recommendations of the **IMC 2024 si
 ## Requirements
 
 - Python 3.10+ (developed with 3.12)
-- [pycolmap](https://github.com/colmap/pycolmap). **The dense MVS stage requires a CUDA-enabled build of pycolmap/COLMAP and an NVIDIA GPU.** SfM alone runs on CPU.
-- PyTorch and [Kornia](https://github.com/kornia/kornia)
+- pycolmap. **The dense MVS stage requires a CUDA-enabled build of pycolmap/COLMAP and an NVIDIA GPU.** SfM alone runs on CPU.
+- PyTorch and Kornia
 - Open3D, h5py, OpenCV, NumPy, Pillow, tqdm, matplotlib
 - Linux reccomended because I went though hell with pycolmap on Windows, but maybe that's just me
 
